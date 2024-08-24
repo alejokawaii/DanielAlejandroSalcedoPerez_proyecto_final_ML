@@ -1,0 +1,44 @@
+cv: null
+error_score: .nan
+estimator: !!python/object:sklearn.neighbors._classification.KNeighborsClassifier
+  _sklearn_version: 1.5.0
+  algorithm: auto
+  leaf_size: 30
+  metric: minkowski
+  metric_params: null
+  n_jobs: null
+  n_neighbors: 5
+  p: 2
+  radius: null
+  weights: uniform
+estimator__algorithm: auto
+estimator__leaf_size: 30
+estimator__metric: minkowski
+estimator__metric_params: null
+estimator__n_jobs: null
+estimator__n_neighbors: 5
+estimator__p: 2
+estimator__weights: uniform
+n_jobs: null
+param_grid:
+  algorithm:
+  - ball_tree
+  leaf_size:
+  - 5
+  metric:
+  - minkowski
+  metric_params:
+  - null
+  n_jobs:
+  - null
+  n_neighbors:
+  - 1
+  p:
+  - 1.0
+  weights:
+  - uniform
+pre_dispatch: 2*n_jobs
+refit: true
+return_train_score: false
+scoring: null
+verbose: 0

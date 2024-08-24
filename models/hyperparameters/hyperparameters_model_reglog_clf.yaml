@@ -1,0 +1,71 @@
+cv: null
+error_score: .nan
+estimator: !!python/object:sklearn.linear_model._logistic.LogisticRegression
+  C: 1.0
+  _sklearn_version: 1.5.0
+  class_weight: null
+  dual: false
+  fit_intercept: true
+  intercept_scaling: 1
+  l1_ratio: null
+  max_iter: 100
+  multi_class: deprecated
+  n_jobs: null
+  penalty: l2
+  random_state: null
+  solver: lbfgs
+  tol: 0.0001
+  verbose: 0
+  warm_start: false
+estimator__C: 1.0
+estimator__class_weight: null
+estimator__dual: false
+estimator__fit_intercept: true
+estimator__intercept_scaling: 1
+estimator__l1_ratio: null
+estimator__max_iter: 100
+estimator__multi_class: deprecated
+estimator__n_jobs: null
+estimator__penalty: l2
+estimator__random_state: null
+estimator__solver: lbfgs
+estimator__tol: 0.0001
+estimator__verbose: 0
+estimator__warm_start: false
+n_jobs: null
+param_grid:
+  C:
+  - 0.1
+  class_weight:
+  - null
+  dual:
+  - false
+  fit_intercept:
+  - false
+  intercept_scaling:
+  - 0.1
+  l1_ratio:
+  - 0.0
+  max_iter:
+  - 100
+  multi_class:
+  - auto
+  n_jobs:
+  - null
+  penalty:
+  - l2
+  random_state:
+  - 22
+  solver:
+  - newton-cg
+  tol:
+  - 0.0001
+  verbose:
+  - 0
+  warm_start:
+  - false
+pre_dispatch: 2*n_jobs
+refit: true
+return_train_score: false
+scoring: null
+verbose: 0

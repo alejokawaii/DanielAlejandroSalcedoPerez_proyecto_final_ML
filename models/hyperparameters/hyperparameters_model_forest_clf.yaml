@@ -1,0 +1,114 @@
+cv: null
+error_score: .nan
+estimator: !!python/object:sklearn.ensemble._forest.RandomForestClassifier
+  _sklearn_version: 1.5.0
+  bootstrap: true
+  ccp_alpha: 0.0
+  class_weight: null
+  criterion: gini
+  estimator: !!python/object:sklearn.tree._classes.DecisionTreeClassifier
+    _sklearn_version: 1.5.0
+    ccp_alpha: 0.0
+    class_weight: null
+    criterion: gini
+    max_depth: null
+    max_features: null
+    max_leaf_nodes: null
+    min_impurity_decrease: 0.0
+    min_samples_leaf: 1
+    min_samples_split: 2
+    min_weight_fraction_leaf: 0.0
+    monotonic_cst: null
+    random_state: null
+    splitter: best
+  estimator_params: !!python/tuple
+  - criterion
+  - max_depth
+  - min_samples_split
+  - min_samples_leaf
+  - min_weight_fraction_leaf
+  - max_features
+  - max_leaf_nodes
+  - min_impurity_decrease
+  - random_state
+  - ccp_alpha
+  - monotonic_cst
+  max_depth: null
+  max_features: sqrt
+  max_leaf_nodes: null
+  max_samples: null
+  min_impurity_decrease: 0.0
+  min_samples_leaf: 1
+  min_samples_split: 2
+  min_weight_fraction_leaf: 0.0
+  monotonic_cst: null
+  n_estimators: 100
+  n_jobs: null
+  oob_score: false
+  random_state: null
+  verbose: 0
+  warm_start: false
+estimator__bootstrap: true
+estimator__ccp_alpha: 0.0
+estimator__class_weight: null
+estimator__criterion: gini
+estimator__max_depth: null
+estimator__max_features: sqrt
+estimator__max_leaf_nodes: null
+estimator__max_samples: null
+estimator__min_impurity_decrease: 0.0
+estimator__min_samples_leaf: 1
+estimator__min_samples_split: 2
+estimator__min_weight_fraction_leaf: 0.0
+estimator__monotonic_cst: null
+estimator__n_estimators: 100
+estimator__n_jobs: null
+estimator__oob_score: false
+estimator__random_state: null
+estimator__verbose: 0
+estimator__warm_start: false
+n_jobs: null
+param_grid:
+  bootstrap:
+  - true
+  ccp_alpha:
+  - 0.0
+  class_weight:
+  - null
+  criterion:
+  - entropy
+  max_depth:
+  - 3
+  max_features:
+  - sqrt
+  max_leaf_nodes:
+  - null
+  max_samples:
+  - null
+  min_impurity_decrease:
+  - 0.0
+  min_samples_leaf:
+  - 1
+  min_samples_split:
+  - 2
+  min_weight_fraction_leaf:
+  - 0.0
+  monotonic_cst:
+  - null
+  n_estimators:
+  - 5
+  n_jobs:
+  - null
+  oob_score:
+  - false
+  random_state:
+  - 22
+  verbose:
+  - 0
+  warm_start:
+  - false
+pre_dispatch: 2*n_jobs
+refit: true
+return_train_score: false
+scoring: null
+verbose: 0

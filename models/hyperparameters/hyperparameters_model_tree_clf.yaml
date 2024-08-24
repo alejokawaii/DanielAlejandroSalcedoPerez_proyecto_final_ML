@@ -1,0 +1,63 @@
+cv: null
+error_score: .nan
+estimator: !!python/object:sklearn.tree._classes.DecisionTreeClassifier
+  _sklearn_version: 1.5.0
+  ccp_alpha: 0.0
+  class_weight: null
+  criterion: gini
+  max_depth: null
+  max_features: null
+  max_leaf_nodes: null
+  min_impurity_decrease: 0.0
+  min_samples_leaf: 1
+  min_samples_split: 2
+  min_weight_fraction_leaf: 0.0
+  monotonic_cst: null
+  random_state: null
+  splitter: best
+estimator__ccp_alpha: 0.0
+estimator__class_weight: null
+estimator__criterion: gini
+estimator__max_depth: null
+estimator__max_features: null
+estimator__max_leaf_nodes: null
+estimator__min_impurity_decrease: 0.0
+estimator__min_samples_leaf: 1
+estimator__min_samples_split: 2
+estimator__min_weight_fraction_leaf: 0.0
+estimator__monotonic_cst: null
+estimator__random_state: null
+estimator__splitter: best
+n_jobs: null
+param_grid:
+  ccp_alpha:
+  - 0.0
+  class_weight:
+  - null
+  criterion:
+  - gini
+  max_depth:
+  - 3
+  max_features:
+  - null
+  max_leaf_nodes:
+  - null
+  min_impurity_decrease:
+  - 0.0
+  min_samples_leaf:
+  - 1
+  min_samples_split:
+  - 2
+  min_weight_fraction_leaf:
+  - 0.0
+  monotonic_cst:
+  - null
+  random_state:
+  - 22
+  splitter:
+  - best
+pre_dispatch: 2*n_jobs
+refit: true
+return_train_score: false
+scoring: null
+verbose: 0

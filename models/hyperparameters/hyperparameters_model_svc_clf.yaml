@@ -1,0 +1,73 @@
+cv: null
+error_score: .nan
+estimator: !!python/object:sklearn.svm._classes.SVC
+  C: 1.0
+  _sklearn_version: 1.5.0
+  break_ties: false
+  cache_size: 200
+  class_weight: null
+  coef0: 0.0
+  decision_function_shape: ovr
+  degree: 3
+  epsilon: 0.0
+  gamma: scale
+  kernel: rbf
+  max_iter: -1
+  nu: 0.0
+  probability: false
+  random_state: null
+  shrinking: true
+  tol: 0.001
+  verbose: false
+estimator__C: 1.0
+estimator__break_ties: false
+estimator__cache_size: 200
+estimator__class_weight: null
+estimator__coef0: 0.0
+estimator__decision_function_shape: ovr
+estimator__degree: 3
+estimator__gamma: scale
+estimator__kernel: rbf
+estimator__max_iter: -1
+estimator__probability: false
+estimator__random_state: null
+estimator__shrinking: true
+estimator__tol: 0.001
+estimator__verbose: false
+n_jobs: null
+param_grid:
+  C:
+  - 1.0
+  break_ties:
+  - true
+  cache_size:
+  - 200
+  class_weight:
+  - null
+  coef0:
+  - 0.0
+  decision_function_shape:
+  - ovr
+  degree:
+  - 1
+  gamma:
+  - scale
+  kernel:
+  - linear
+  max_iter:
+  - 15
+  probability:
+  - true
+  random_state:
+  - 22
+  shrinking:
+  - true
+  tol:
+  - 0.001
+  verbose:
+  - false
+pre_dispatch: 2*n_jobs
+refit: true
+return_train_score: false
+scoring: null
+verbose: 0
