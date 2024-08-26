@@ -6,6 +6,8 @@ import imblearn
 import pickle
 import yaml
 from sklearn import preprocessing
+from sklearn import metrics
+from sklearn.metrics import PrecisionRecallDisplay
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import GridSearchCV
