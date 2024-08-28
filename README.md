@@ -24,13 +24,13 @@ Se guardaran todos los modelos y los datos usados para su entrenamiento y evalua
 Ejemplo de lo que se puede aquí:
 
 + ## Dataframe:
-![image](images\intro.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/intro.png)
 + ## Análisis:
-![image](images\plot_1.png)
-![image](images\plot_2.png)
-![image](images\plot_3.png)
-![image](images\plot_4.png)
-![image](images\plot_5.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_1.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_2.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_3.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_4.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_5.png)
 + ## Modelos y evaluación:
-![image](images\plot_6.png)
-![image](images\plot_7.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_6.png)
+![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/plot_7.png)
