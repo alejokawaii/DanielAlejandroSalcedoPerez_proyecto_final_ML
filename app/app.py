@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import streamlit.components.v1 as c
 from PIL import Image
-import pickle
+import joblib
 import sklearn
 st.set_page_config(page_title="Modelo para ver si pasa el examen BAR de California",
                    page_icon=":BAR:")
@@ -83,26 +83,32 @@ elif seleccion == "Predicciones":
         Returns:
             float: Predicción del modelo
         """
-        model = pickle.load("models/trained_w_data_no_controv/untrained_model_reglog_cfl_w_data_no_controv.pkl")
-        X_test_ros_nocontrov=pd.read_csv("data/test/datos_procesados_X_test_ros_nocontrov.csv")
-        return model.predict(X_test_ros_nocontrov)
+        model = joblib.load("./app/modelo_streamlit.joblib")
+        df=pd.DataFrame(features,columns=["ID","lsat", "grad", "zgpa", "fulltime", "fam_inc", "Dropout", "tier", "indxgrp", "gpa"])
+        return model.predict(df)
 
     aprobar_suspender = [0, 1]
 
     # Input fields
     st.header('')
-    sepal_length = st.number_input('Sepal Length (cm)', min_value=0.0, max_value=10.0, value=5.0, step=0.1)
-    sepal_width = st.number_input('Sepal Width (cm)', min_value=0.0, max_value=10.0, value=3.5, step=0.1)
-    petal_length = st.number_input('Petal Length (cm)', min_value=0.0, max_value=10.0, value=1.5, step=0.1)
-    petal_width = st.number_input('Petal Width (cm)', min_value=0.0, max_value=10.0, value=0.2, step=0.1)
+    ID= 1.0
+    lsat = st.number_input('Puntuación LSAT', min_value=0.0, max_value=10.0, value=5.0, step=0.1)
+    grad = st.number_input('Graduado de Law School (Sí=1;No=0)', min_value=0, max_value=1, value=1)
+    zgpa = st.number_input('ZGPA', min_value=-4.0, max_value=4.0, value=0.0, step=0.5)
+    fulltime = st.number_input('Estudia (1) o estudia y trabaja (0)', min_value=0.0, max_value=1.0, value=0.0, step=1.0)
+    fam_inc = st.number_input('Renta familiar', min_value=0.0, max_value=5.0, value=3.0, step=1.0)
+    Dropout = st.number_input('Abandona Law School (Sí=0;No=1)', min_value=0.0, max_value=1.0, value=0.0,step=1.0)
+    tier = st.number_input('Categoria de su escuela original', min_value=0.0, max_value=6.0, value=3.0,step=1.0)
+    indxgrp = st.number_input('INDXGRP', min_value=1.0, max_value=7.0, value=3.0,step=1.0)
+    gpa = st.number_input('Puntuación de GPA', min_value=0.0, max_value=4.0, value=2.0,step=1.0)
 
     # Prediction button
-    if st.button('Predict Iris Class'):
+    if st.button('Predice si aprueba el BAR o no'):
         # Make prediction
-        features = [[sepal_length, sepal_width, petal_length, petal_width]]
+        features = [[ID, lsat, grad, zgpa, fulltime, fam_inc, Dropout, tier, indxgrp, gpa]]
         prediction = predict(features)
 
         # Display result
-        st.header('Prediction')
+        st.header('Predicción')
         st.write()
-        st.write(f'The iris flower is predicted to be: **{aprobar_suspender[int(prediction)]}**')
+        st.write(f'¿El estudiante aprueba (1) o suspende(0)? Respuesta:**{aprobar_suspender[int(prediction)]}**')
