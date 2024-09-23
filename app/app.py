@@ -92,7 +92,7 @@ elif seleccion == "Predicciones":
     # Input fields
     st.header('')
     ID= 1.0
-    lsat = st.number_input('Puntuación LSAT', min_value=0.0, max_value=10.0, value=5.0, step=0.1)
+    lsat = st.number_input('Puntuación LSAT', min_value=0.0, max_value=42.0, value=21.0, step=1.0)
     grad = st.number_input('Graduado de Law School (Sí=1;No=0)', min_value=0, max_value=1, value=1)
     zgpa = st.number_input('ZGPA', min_value=-4.0, max_value=4.0, value=0.0, step=0.5)
     fulltime = st.number_input('Estudia (1) o estudia y trabaja (0)', min_value=0.0, max_value=1.0, value=0.0, step=1.0)
