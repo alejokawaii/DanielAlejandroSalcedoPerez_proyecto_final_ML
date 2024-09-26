@@ -5,6 +5,7 @@ numpy==1.26.4
 scikit-learn==1.5.0
 imblearn==0.12.3
 pickle==4.0
+joblib==1.4.2
 yaml==6.0.2
 comet_ml==3.45.0
 streamlit==1.38.0
