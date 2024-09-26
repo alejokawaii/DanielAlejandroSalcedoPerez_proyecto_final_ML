@@ -3,7 +3,6 @@ import pandas as pd
 import streamlit.components.v1 as c
 from PIL import Image
 import joblib
-import sklearn
 st.set_page_config(page_title="Modelo para ver si pasa el examen BAR de California",
                    page_icon=":BAR:")
 
