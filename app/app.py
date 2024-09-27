@@ -30,7 +30,8 @@ elif seleccion == "EDA":
 
     st.write("Análisis exploratorio de datos")
 
-    df = pd.read_csv("data\processed\datos_procesados.csv", sep=",")
+    url='https://raw.githubusercontent.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/refs/heads/main/data/processed/datos_procesados.csv'
+    df = pd.read_csv(url, sep=",")
     st.write("Dataframe completo:")
     st.write(df)
     
