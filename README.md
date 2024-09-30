@@ -12,16 +12,14 @@ Se guardaran todos los modelos y los datos usados para su entrenamiento y evalua
 
 + Los modelos guardados y sus hiperparametros se encuentran guardados en la carpeta *models*. Al igual que los datos, también los modelos se encuentran subdivididos. En este caso, la subdivisión se hace en subcarpetas (untrained,trained_w_data_controv...).
 
-+ La carpeta *app* se encuentra vacia.
++ La carpeta *api* NO se encuentra vacia. En principio, este modelo puede ejecutarse como una app o una api local o en un servidor externo (en la nube _uuu_).
 
-    **En construcción*
++ La carpeta *src* tiene exclusivamente el código necesario para los pasos indispensables para conseguir los resultados del ejercicio básico.
 
-+ La carpeta *src* tiene exclusivamente el código necesario para los pasos indispensables para conseguir los resultados del ejercicio.
-
-+ Por último, *requirements.txt* contiene las librerias usadas. Asímismo, se ha usado Python 3.10.14
++ Por último, *requirements.txt* contiene las librerias usadas. Asímismo, se ha usado Python 3.10.14.
 
 
-Ejemplo de lo que se puede aquí:
+Ejemplo de lo que se puede ver aquí:
 
 + ## Dataframe:
 ![image](https://github.com/alejokawaii/DanielAlejandroSalcedoPerez_proyecto_final_ML/blob/main/images/intro.png)
